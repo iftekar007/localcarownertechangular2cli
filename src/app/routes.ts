@@ -11,9 +11,6 @@ const appRoutes: Routes = [
     { path: '', component: HomeComponent},
     //{ path: 'contact', component: ContactComponent},
 
-
-
-
 ];
 
 
