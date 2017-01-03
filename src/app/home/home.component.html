@@ -34,7 +34,7 @@
 
           <div class="form-group">
 
-            <input [formControl]="submitform.controls['fname']" name="fname"  type="text" class="form-control" placeholder="Frist Name">
+            <input [formControl]="submitform.controls['fname']" name="fname"  type="text" class="form-control" placeholder="First Name">
 
             <!-- <span class="has-error">error text</span>-->
             <span  *ngIf ="submitform.controls['fname'].touched && !submitform.controls['fname'].valid" class="help-inline has-error"><span class="errormsgtxt">First Name is Required !</span> </span>
