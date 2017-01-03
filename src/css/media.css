@@ -1,9 +1,0 @@
-@media(max-width:1660px) {
-.partnerswrapper .car_logo_block{width:100%; margin:40px auto;}
-}
-
-@media(max-width:1300px) {
-
-    .top_bannerblock{ background-position: -100px top;}
-    .top_bannerblock .logo{ width: 300px; margin: 16px;}
-}

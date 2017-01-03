@@ -1,0 +1,399 @@
+
+<div class="logomobile"><a href="javascript:void(0)"><img src="assets/images/logo.png"></a> </div>
+
+<div class="container-fluid top_bannerblock">
+
+  <div class="logo"><a href="javascript:void(0)"><img src="assets/images/logo.png"></a> </div>
+  <div class=" bannertoptextcon">
+    <div class="container ">
+      <h1>The Ultimate Marketing Tool
+        for New Car Dealerships!</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid topform_wrapper">
+
+
+  <div class="container">
+
+
+    <div class="form_mainbox">
+
+      <h1>get Started Now !</h1>
+      <h2>Please fill out the form below for more information</h2>
+
+
+
+
+
+
+      <div class="form_maindiv">
+        <form novalidate [formGroup]="submitform"   name="addcar" >
+
+          <div class="form-group">
+
+            <input [formControl]="submitform.controls['fname']" name="fname"  type="text" class="form-control" placeholder="Frist Name">
+
+            <!-- <span class="has-error">error text</span>-->
+            <span  *ngIf ="submitform.controls['fname'].touched && !submitform.controls['fname'].valid" class="help-inline has-error"><span class="errormsgtxt">First Name is Required !</span> </span>
+
+          </div>
+          <div class="form-group">
+
+            <input [formControl]="submitform.controls['lname']" name="lname" type="text" class="form-control" placeholder="Last Name">
+            <!-- <span class="has-error">error text</span>-->
+            <span  *ngIf ="submitform.controls['lname'].touched && !submitform.controls['lname'].valid" class="help-inline has-error"><span class="errormsgtxt">Last Name is Required !</span> </span>
+
+          </div>
+
+          <div class="form-group">
+
+            <input type="text" [formControl]="submitform.controls['dealer']" name="dealer" class="form-control" placeholder="Dealership">
+            <!-- <span class="has-error">error text</span>-->
+            <span  *ngIf ="submitform.controls['dealer'].touched && !submitform.controls['dealer'].valid" class="help-inline has-error"><span class="errormsgtxt">Dealer Name is Required !</span> </span>
+
+          </div>
+
+          <div class="form-group">
+
+            <input [formControl]="submitform.controls['email']" name="email" type="email" class="form-control" placeholder="Email">
+            <!-- <span class="has-error">error text</span>-->
+            <span  *ngIf ="submitform.controls['email'].touched && !submitform.controls['email'].valid" class="help-inline has-error"><span class="errormsgtxt">Email is Required and must be valid!</span> </span>
+
+          </div>
+
+          <div class="form-group">
+
+            <input [formControl]="submitform.controls['phone']" name="phone" type="text" class="form-control" placeholder="Phone Number">
+            <!-- <span class="has-error">error text</span>-->
+            <span  *ngIf ="submitform.controls['phone'].touched && !submitform.controls['phone'].valid" class="help-inline has-error"><span class="errormsgtxt">Phone Number is Required !</span> </span>
+
+          </div>
+
+
+</form>
+
+
+
+      </div>
+      <input type="submit" (click)="submitform1()" value="Rush my order" class="subbtn">
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+
+</div>
+
+
+
+<div class="container-fluid top_bannertext1">
+
+  <div class="container">
+    <h2>Marketing Campaign That Works - we can
+      reach thousands of local car buyers</h2>
+  </div>
+
+
+</div>
+
+<div class="container-fluid top_bannertext2">
+
+  <div class="container">
+    <h2>Boost your sales and have customers running to your dealership by tapping into the nation’s largest email marketing campaign. </h2>
+  </div>
+
+
+</div>
+
+
+<div class="container-fluid middleblock_wrapper">
+  <div class="middleblock_text">
+    <h2>We Can Reach Local Car Owners <br>
+
+      that Love Your Cars!
+    </h2>
+
+    <h3><span>eMail marketing</span>  is one of the most powerful ways to reach a genuinely targeted
+      audience. We know a tremendous amount of information on the buyers in our database. You can specialize your desired data points and we can market to just that list!
+    </h3>
+  </div>
+
+</div>
+
+
+
+<div class="container-fluid services_wrapper">
+
+  <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12">
+    <div class="serimgdiv"><img src="assets/images/ser_1.jpg" alt="#">
+      <h2>Did you know</h2>
+    </div>
+
+    <div class="sertextdiv"><h4>That we are able to findthousands of new car buyers within avery tight radius of your location? </h4></div>
+
+  </div>
+
+  <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12">
+    <div class="serimgdiv"><img src="assets/images/ser_2.jpg" alt="#">
+      <h2>find the car buyers</h2>
+    </div>
+
+    <div class="sertextdiv"><h4>That bought from your competition! </h4></div>
+
+  </div>
+
+  <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12">
+    <div class="serimgdiv"><img src="assets/images/ser_3.jpg" alt="#">
+      <h2>get your free report</h2>
+    </div>
+
+    <div class="sertextdiv"><h4>Get your free report and we would call to you about the options we have to reach this audience!</h4></div>
+
+  </div>
+
+  <div class="clearfix"></div>
+
+
+
+</div>
+
+<div class="container-fluid cartext_wrapper">
+
+
+
+
+  <div class="localcar_roundwrapper">
+    <div class="local_carlogo"><img src="assets/images/logo2.png"></div>
+
+    <div class="car_text1">
+
+      <h2>First we </h2>
+      <h3> Run a full count from our database of the<br/>Quality Car Owners that have purchased<br/>
+        cars less than 8 years old within<br/>
+        your area of reach.</h3>
+
+    </div>
+
+
+    <div class="car_text2">
+
+      <h2>then we </h2>
+      <h3>
+        Retermine how many Car Owners are<br/>
+        driving the brands you and your<br/>
+        competitors sell. </h3>
+
+    </div>
+
+
+    <div class="car_text3">
+
+      <h2>we provide</h2>
+      <h3>
+
+        You this free report and from that count youtell<br/>us which potential prospects<br/>
+        you want to target.  </h3>
+
+    </div>
+
+    <div class="car_text4">
+
+      <h2>then our</h2>
+      <h3>
+        Experts will analyze your marketing<br/>
+        messages and help you determine how best to<br/>get open and click rates to your<br/>
+        targeted prospects. </h3>
+
+    </div>
+    <div class="car_text5">
+
+      <h2>WITH OUR 100%</h2>
+      <h3>
+        inbox safe sever certified guarantee we<br/>broadcast your message hitting every<br/>
+        inbox in on the list.
+
+      </h3>
+
+    </div>
+    <div class="car_text6">
+
+      <h2>WITHIN 48 HOURS</h2>
+      <h3>
+
+        of the broadcast we give you all the statistics<br/>
+        of messages delivered, opened and clicked<br/>
+        by your targeted prospects.
+      </h3>
+
+    </div>
+    <div class="car_text7">
+
+      <h2>7 DAYS AFTER</h2>
+      <h3>
+
+        The initial broadcast we will remarket your ad<br/>with a new subject line to everyone that<br/>opened the email boosting your click<br/>
+        through rates even more.
+
+      </h3>
+
+    </div>
+    <div class="car_text8">
+
+      <h2>we bring</h2>
+      <h3>
+
+        our marketing analytics full circle with our<br/>
+        Match-back guarantee analysis. For 60 days after the<br/>broadcast, if you share with us the names of customers<br/>that bought a car we will share with you the record of<br/>those that came from our opt in lists.
+
+
+      </h3>
+
+    </div>
+
+
+    <div class="car_text9">
+
+      <h2>AFTER PROVING</h2>
+      <h3>
+
+        The highly targeted success of our<br/>
+        marketing programs we can do it as often as you<br/>like. We add hundreds of new car owners a<br/>
+        week and can offer you quarterly and<br/>
+        yearly contract discounts.
+
+
+      </h3>
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+<div class="container-fluid partnerswrapper">
+
+  <h2>our partners</h2>
+
+  <div class="car_logo_block">
+
+    <img src="assets/images/car_logo1.jpg" alt="#">
+    <img src="assets/images/car_logo2.jpg" alt="#">
+    <img src="assets/images/car_logo3.jpg" alt="#">
+    <img src="assets/images/car_logo4.jpg" alt="#">
+    <img src="assets/images/car_logo5.jpg" alt="#">
+    <img src="assets/images/car_logo6.jpg" alt="#">
+    <img src="assets/images/car_logo7.jpg" alt="#">
+    <img src="assets/images/car_logo8.jpg" alt="#">
+    <img src="assets/images/car_logo9.jpg" alt="#">
+    <img src="assets/images/car_logo10.jpg" alt="#">
+    <img src="assets/images/car_logo11.jpg" alt="#">
+    <img src="assets/images/car_logo12.jpg" alt="#">
+    <img src="assets/images/car_logo13.jpg" alt="#">
+    <img src="assets/images/car_logo14.jpg" alt="#">
+    <img src="assets/images/car_logo15.jpg" alt="#">
+    <img src="assets/images/car_logo16.jpg" alt="#">
+    <img src="assets/images/car_logo17.jpg" alt="#">
+    <img src="assets/images/car_logo18.jpg" alt="#">
+
+
+
+    <div class="clearfix"></div>
+  </div>
+
+
+  <div class="fillformdiv" (click)="gopagetop()">Fill out form above to get started right away!</div>
+
+
+</div>
+
+
+<div class="container-fluid footerwrapper">
+  <div class="foooter_socialblock">
+    <a href="javascript:void(0)"><img src="assets/images/socialicon1.jpg"></a>
+    <a href="javascript:void(0)"><img src="assets/images/socialicon2.jpg"></a>
+    <a href="javascript:void(0)"><img src="assets/images/socialicon3.jpg"></a>
+    <a href="javascript:void(0)"><img src="assets/images/socialicon4.jpg"></a>
+    <a href="javascript:void(0)"><img src="assets/images/socialicon5.jpg"></a>
+    <a href="javascript:void(0)"><img src="assets/images/socialicon6.jpg"></a>
+    <a href="javascript:void(0)"><img src="assets/images/socialicon7.jpg"></a>
+
+  </div>
+
+  <div class="container">
+
+    <div class=" col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+      <span><img src="assets/images/footer_icon1.png" alt="#"></span>
+
+      <h4>Financing Made Easy </h4>
+      <p>Our stress-free finance department that can find financial solutions to save you money.</p>
+    </div>
+
+    <div class=" col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+      <span><img src="assets/images/footer_icon2.png" alt="#"></span>
+
+      <h4>Wide Range of Brands </h4>
+      <p>With a robust selection of popular vehicles on hand, as well as leading vehicles from BMW and Ford.</p>
+    </div>
+
+
+    <div class=" col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+      <span><img src="assets/images/footer_icon3.png" alt="#"></span>
+
+      <h4>Trusted By Thousands  </h4>
+      <p>10 new offers every day. 350 offers on site, trusted by a community of thousands of users.</p>
+    </div>
+
+
+    <div class=" col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+      <span><img src="assets/images/footer_icon4.png" alt="#"></span>
+
+      <h4>Service & Maintenance </h4>
+      <p>10 new offers every day. 350 offers on site, trusted by a community of thousands of users.</p>
+    </div>
+
+
+
+    <div class="clearfix"></div>
+  </div>
+
+
+
+  <h2>&copy; Copyright 2016 localcarowner - All Rights Reserved </h2>
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade localcarpopup" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+
+        <img src="assets/images/logo.png" alt="#" class="modallogo">
+        <p>Thank you for your interest in the LocalCarOwner.com services. Our team will get back to your shortly.</p>
+      </div>
+      <div class="modal-footer">
+      <!--  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+      </div>
+    </div>
+
+  </div>
+</div>
