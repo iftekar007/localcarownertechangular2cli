@@ -66,6 +66,7 @@ export class HomeComponent implements OnInit {
           .subscribe(data => {
             //this.router.navigateByUrl('/carlist(adminheader:adminheader//adminfooter:adminfooter)');
             $('#myModal').modal('show');
+            this.submitform.reset();
 
           }, error => {
             console.log("Oooops!");
