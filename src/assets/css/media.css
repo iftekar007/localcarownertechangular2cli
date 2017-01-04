@@ -1,7 +1,7 @@
 @media(max-width:1680px) {
 
     .localcar_roundwrapper h3{ font-size: 15px; line-height: 20px;}
-    .car_text8{  left:-40px; top: 220px; width: 390px; background: url("../images/con_8img.png") no-repeat 80px top;}
+    .car_text8{  left:-12px; top: 220px; width: 390px; background: url("../images/con_8img.png") no-repeat 40px top;}
 }
 
 
@@ -75,6 +75,16 @@
 
 
 @media(max-width:1199px) {
+
+
+    .footer_newblock_wrapper{ width: 100%; padding: 25px 0; background-size: cover; height: auto;}
+
+    .footer_newblock_wrapper .footer_newblocklink{ width: 100%; height:auto; margin: 0 auto; margin-top: 0px; background:none; }
+
+
+    .footer_newblock_wrapper .footer_newblocklink a h2{ display: block; margin: 0; padding: 0; text-align: center; font-family: 'squada_oneregular'; font-size: 44px; color: #fbc404;}
+
+    .footer_newblock_wrapper .footer_newblocklink a span{  margin-top:0px; color: #fff;  }
 
     .top_bannertext1 h2{ width: 100%; margin: 0 auto;}
 

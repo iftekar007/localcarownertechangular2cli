@@ -21,8 +21,8 @@
 
     <div class="form_mainbox">
 
-      <h1>get Started Now !</h1>
-      <h2>Please fill out the form below for more information</h2>
+      <h1>Get your free report</h1>
+      <h2>This specialized targeted report is only a quick submission away!</h2>
 
 
 
@@ -73,12 +73,30 @@
           </div>
 
 
+
+
+          <div class="form-group">
+
+            <input [formControl]="submitform.controls['zipcode']" name="zipcode" type="text" class="form-control" placeholder="Zip Code">
+            <!-- <span class="has-error">error text</span>-->
+            <span  *ngIf ="submitform.controls['zipcode'].touched && !submitform.controls['zipcode'].valid" class="help-inline has-error"><span class="errormsgtxt">Zip Code is Required !</span> </span>
+
+          </div>
+          <div class="form-group">
+
+            <input [formControl]="submitform.controls['addzipcode']" name="addzipcode" type="text" class="form-control" placeholder="Additional Zip Code">
+            <!-- <span class="has-error">error text</span>-->
+
+
+          </div>
+
+
 </form>
 
 
 
       </div>
-      <input type="submit" (click)="submitform1()" value="Rush my order" class="subbtn">
+      <input type="submit" (click)="submitform1()" value="Get My Report" class="subbtn">
     </div>
 
     <div class="clearfix"></div>
@@ -93,7 +111,7 @@
 <div class="container-fluid top_bannertext1">
 
   <div class="container">
-    <h2>Marketing Campaign That Works - we can
+    <h2>Marketing Campaigns That Works - we can
       reach thousands of local car buyers</h2>
   </div>
 
@@ -183,7 +201,7 @@
 
       <h2>then we </h2>
       <h3>
-        Retermine how many Car Owners are<br/>
+        Determine how many Car Owners are<br/>
         driving the brands you and your<br/>
         competitors sell. </h3>
 
@@ -195,7 +213,7 @@
       <h2>we provide</h2>
       <h3>
 
-        You this free report and from that count youtell<br/>us which potential prospects<br/>
+        You this free report and from that count you tell<br/>us which potential prospects<br/>
         you want to target.  </h3>
 
     </div>
@@ -214,7 +232,7 @@
       <h2>WITH OUR 100%</h2>
       <h3>
         inbox safe sever certified guarantee we<br/>broadcast your message hitting every<br/>
-        inbox in on the list.
+        inbox on the customized list.
 
       </h3>
 
@@ -313,9 +331,21 @@
 
 </div>
 
+<div class=" container-fluid footer_newblock_wrapper">
 
+  <div class="footer_newblocklink" (click)="gopagetop()">
+    <a href="javascript:void(0)">
+    <h2> Get started today!</h2>
+      <span>Click Here</span>
+
+    </a>
+
+
+  </div>
+
+</div>
 <div class="container-fluid footerwrapper">
-  <div class="foooter_socialblock">
+ <!-- <div class="foooter_socialblock">
     <a href="javascript:void(0)"><img src="assets/images/socialicon1.jpg"></a>
     <a href="javascript:void(0)"><img src="assets/images/socialicon2.jpg"></a>
     <a href="javascript:void(0)"><img src="assets/images/socialicon3.jpg"></a>
@@ -324,9 +354,9 @@
     <a href="javascript:void(0)"><img src="assets/images/socialicon6.jpg"></a>
     <a href="javascript:void(0)"><img src="assets/images/socialicon7.jpg"></a>
 
-  </div>
+  </div>-->
 
-  <div class="container">
+ <!-- <div class="container">
 
     <div class=" col-lg-3 col-md-3 col-sm-12 col-xs-12">
 
@@ -365,7 +395,10 @@
 
 
     <div class="clearfix"></div>
-  </div>
+  </div>-->
+
+
+
 
 
 

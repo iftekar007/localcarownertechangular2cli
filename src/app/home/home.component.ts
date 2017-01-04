@@ -20,6 +20,9 @@ export class HomeComponent implements OnInit {
       dealer: [, Validators.required],
       email: [, HomeComponent.validateEmail],
       phone: [, Validators.required],
+      zipcode: [, Validators.required],
+      addzipcode: [''],
+
 
     });
   }
